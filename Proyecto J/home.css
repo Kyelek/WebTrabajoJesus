@@ -1,0 +1,427 @@
+/* Hero */
+.hero-carousel {
+  height: 400px;
+  overflow: hidden;
+}
+.hero-slide {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+.hero-slide.active { opacity: 1; }
+
+.hero-overlay {
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.5);
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  color: #fff;
+}
+
+/* Flechas Hero */
+.hero-carousel .carousel-control {
+  position: absolute; top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  z-index: 50;
+}
+#heroPrev { left: 1rem; }
+#heroNext { right: 1rem; }
+
+/* Portfolio Home (ajustes mínimos) */
+#portfolio-home h2 { color: #3f3a36; }
+#portfolio-home h4 { font-weight: 500; margin-bottom: 0.75rem; }
+.portfolio-img:hover { transform: scale(1.02); }
+
+/* Carrusel Marcas */
+#marcas .carousel-item img {
+  max-height: 80px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+#marcas .carousel-item img:hover { opacity: 1; }
+
+:root {
+  --color-primario: #4f352d;
+  --color-secundario: #A1887F;
+  --color-accent: #D7B28D;
+  --color-fondo: #F5F5DC;
+  --color-texto: #333333;
+}
+
+
+/* Sticky footer boilerplate */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  /* display: flex; */
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+main {
+  flex: 1;
+  /* empuja el footer al fondo si poco contenido */
+}
+
+
+.btn-primary {
+  background-color: var(--color-secundario);
+  border-color: var(--color-secundario);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* Overlay hover para productos */
+.card-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .3s ease;
+}
+
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+/* Timeline para “Nuestra historia” */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  list-style: none;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  width: 2px;
+  height: 100%;
+  background: var(--color-primario);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -0.4rem;
+  top: 0.3rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: var(--color-secundario);
+  border-radius: 50%;
+}
+
+/* Contenedor principal */
+.hero-carousel {
+  height: 380px;
+  overflow: hidden;
+}
+
+/* Cada “slide” ocupa todo el hero y está detrás */
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+/* El recuadro de texto encima de las imágenes */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 6px;
+  color: #fff;
+}
+
+/* Flechas de navegación */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.carousel-control.prev {
+  left: 1rem;
+}
+
+.carousel-control.next {
+  right: 1rem;
+}
+
+/* Ajustes responsive opcionales */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+}
+
+/* Grid */
+
+#usp {
+  background-color: #f8f7f0;
+  /* tono crema suave */
+}
+
+#usp h2 {
+  font-weight: 600;
+  color: #3f3a36;
+  /* marrón oscuro suave */
+}
+
+.usp-card {
+  background: #ffffff;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.usp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.usp-icon {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.usp-card:hover .usp-icon {
+  transform: scale(1.2);
+}
+
+#usp p {
+  font-size: 0.9rem;
+  color: #555555;
+  margin-bottom: 0;
+}
+
+/*Trabajos*/
+
+#portfolio h2 {
+  color: #3f3a36;
+  font-weight: 600;
+}
+
+#portfolio h4 {
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+#portfolio p {
+  color: #555;
+}
+
+
+/* Forzar que la img llene el contenedor .ratio y recorte proporcionalmente */
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Opcional: hover más sutil ya que el recorte es crítico */
+#portfolio img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Mantener uniformidad entre bloques */
+#portfolio .row+.row {
+  padding-top: 2rem;
+  border-top: 1px solid #e0dcd4;
+}
+
+/*descarga de material*/
+
+#catalogo-maderas {
+  background-color: #f8f7f0;
+  /* tono crema suave */
+}
+
+#catalogo-maderas h3 {
+  color: #3f3a36;
+  font-weight: 600;
+}
+
+#catalogo-maderas p {
+  color: #555;
+  line-height: 1.5;
+}
+
+#catalogo-maderas .btn-success {
+  background-color: #6f8a5e;
+  border-color: #6f8a5e;
+  transition: background-color 0.3s ease;
+}
+
+#catalogo-maderas .btn-success:hover {
+  background-color: #5d754c;
+}
+
+.catalogo-img {
+  max-width: 60%;
+  /* Ajusta al % que prefieras */
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .catalogo-img {
+    max-width: 100%;
+    /* En móviles full width */
+  }
+}
+
+#mainNav {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1)       0%,
+    rgba(153, 125, 73, 0.85) 15%,
+    rgba(153, 125, 73, 0.65) 35%,
+    rgba(153, 125, 73, 0.45) 55%,
+    rgba(153, 125, 73, 0.30) 75%,
+    rgba(153, 125, 73, 0.15) 90%,
+    rgba(153, 125, 73, 0)    100%
+  );
+  transition: background 0.5s ease, padding 0.3s ease;
+}
+
+
+
+#mainNav .nav-link {
+  color: #f8f7f0;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+  font-size: large;
+}
+
+#mainNav .nav-link:hover,
+#mainNav .nav-link.active {
+  color: #624832;
+  font-weight: 500;
+}
+
+/* Botón hamburguesa blanco */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(248,247,240,0.9)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/*TODO: poner fondo cuando se habre el nav en modo movil*/
+.navbar-toggler:focus {
+  outline: none; /* Remove black border when selected */
+  box-shadow: none; /* Remove any default focus shadow */
+}
+
+/* CTA */
+#mainNav .btn-success {
+  background-color: #7c644c;
+  border-color: #6f8a5e;
+  font-weight: 500;
+}
+
+#mainNav .btn-success:hover {
+  background-color: #624832;
+}
+
+/* Al hacer scroll */
+#mainNav.scrolled {
+  background-color: rgba(111, 138, 94, 0.95);
+  padding: 0.4rem 0;
+  /* menos padding para “encoger” el nav */
+}
+
+/*Drop menu*/
+
+#mainNav .dropdown-menu {
+  background-color: var(--color-fondo);      /* mismo crema de tu paleta */
+  border: 1px solid #e0dcd4;                  /* línea suave */
+  border-radius: 6px;                         /* esquinas redondeadas */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);   /* sombra ligera */
+  margin-top: 0.5rem;                         /* separación del toggle */
+}
+
+/* Ítems en marrón oscuro con padding generoso */
+#mainNav .dropdown-item {
+  color: #3f3a36;                             /* marrón oscuro suave */
+  padding: 0.6rem 1.2rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover / focus: verde suave de acento */
+#mainNav .dropdown-item:hover,
+#mainNav .dropdown-item:focus {
+  background-color: rgba(111, 138, 94, 0.238);  /* verde pálido */
+  color: var(--color-primario);               /* marrón fuerte */
+}
+
+/* Ajustar la flecha del toggle al color marrón */
+#mainNav .dropdown-toggle::after {
+  border-top: 0.3em solid #3f3a36;
+  border-right: 0.3em solid #3f3a36;
+}
+
+/* Mantener texto activo en verde-marrón cuando el dropdown esté abierto */
+#mainNav .dropdown-toggle.active,
+#mainNav .nav-item.show > .dropdown-toggle {
+  color: #624832;
+}

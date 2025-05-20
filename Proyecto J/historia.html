@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VERDSANCH | Nuestra historia</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/logo/logoico.ico">
+  <!-- Estilos únicos para Historia -->
+  <!-- <link rel="stylesheet" href="historia.css"> -->
+</head>
+
+<body>
+
+  <!-- NAVBAR (igual al resto de páginas) -->
+  <!-- nav -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top py-2">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo/logopng.png" alt="VERDSANCH" width="90">
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Menú navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item mx-lg-2">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown mx-lg-2">
+            <a class="nav-link dropdown-toggle" href="#" id="productosDD" data-bs-toggle="dropdown">Productos</a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="productosDD">
+              <li><a class="dropdown-item" href="puertas.html">Puertas</a></li>
+              <li><a class="dropdown-item" href="cocina.html">Cocina</a></li>
+              <li><a class="dropdown-item" href="escalones.html">Escalones</a></li>
+              <li><a class="dropdown-item" href="armarios.html">Armarios</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-lg-2"><a class="nav-link active" href="historia.html">Nuestra historia</a></li>
+          <!-- CTA botón -->
+          <li class="nav-item ms-lg-3">
+            <a href="mailto:verdsanch@gmail.com?subject=Solicitud%20de%20presupuesto&body=Hola%20VERDSANCH,%0A%0AMe%20gustaría%20recibir%20un%20presupuesto%20para%20una%20puerta%20a%20medida.%0A%0AGracias."
+              class="btn btn-success btn-sm">
+              Pide tu presupuesto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- SECCIÓN Armarios -->
+  <main class="flex-fill">
+    <!-- Hero Section -->
+    <section id="heroCarousel" class="position-relative hero-carousel mb-5">
+      <!-- Slides -->
+      <div class="hero-slide active" style="background-image: url('assets/img/armarios/armario1.jpeg');"></div>
+      <div class="hero-slide" style="background-image: url('assets/img/armarios/armario3.jpeg');"></div>
+      <div class="hero-slide" style="background-image: url('assets/img/armarios/armario4.jpeg');"></div>
+
+
+      <!-- Overlay de texto -->
+      <div class="hero-overlay text-center px-4">
+        <h1 class="display-4">Armarios de Madera VERDSANCH</h1>
+        <p class="lead">Diseño a medida, calidad insuperable.</p>
+      </div>
+
+      <!-- Controles -->
+      <button id="heroPrev" class="carousel-control prev">&#10094;</button>
+      <button id="heroNext" class="carousel-control next">&#10095;</button>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="container py-5">
+      <h2 class="text-center mb-5 ohs-title">Hitos clave</h2>
+      <ul class="ohs-timeline list-unstyled mx-auto">
+        <li class="ohs-timeline-item mb-4">
+          <h5>2002 – Fundación</h5>
+          <p>Arrancamos en un taller familiar con el sueño de crear puertas únicas.</p>
+        </li>
+        <li class="ohs-timeline-item mb-4">
+          <h5>2008 – Línea eco</h5>
+          <p>Lanzamos puertas certificadas FSC y barnices bajos en COV.</p>
+        </li>
+        <li class="ohs-timeline-item mb-4">
+          <h5>2014 – Taller propio</h5>
+          <p>Inauguramos instalaciones modernas para aumentar producción y precisión.</p>
+        </li>
+        <li class="ohs-timeline-item mb-4">
+          <h5>2019 – Premio Innovación</h5>
+          <p>Ganamos un galardón nacional por diseño sostenible en carpintería.</p>
+        </li>
+        <li class="ohs-timeline-item mb-4">
+          <h5>2023 – Expansión</h5>
+          <p>Comenzamos a exportar a Europa y América Latina.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- VALORES -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 ohs-title">Nuestros valores</h2>
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <img src="assets/historia/artesania.jpg" alt="Artesanía" class="img-fluid catalogo-img rounded shadow-sm">
+            <h5>Artesanía</h5>
+            <p>Detallismo y manos expertas en cada pieza.</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="assets/historia/verde.jpg" alt="Sostenibilidad" class="img-fluid catalogo-img rounded shadow-sm">
+            <h5>Sostenibilidad</h5>
+            <p>Maderas certificadas y procesos eco-friendly.</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <img src="assets/historia/innova.jpeg" alt="Innovación" class="img-fluid catalogo-img rounded shadow-sm">
+            <h5>Innovación</h5>
+            <p>Tecnología y diseño de vanguardia para puertas únicas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPO FUNDADOR -->
+    <section class="py-5 container">
+      <h2 class="text-center mb-5 ohs-title">Equipo fundador</h2>
+      <div class="row justify-content-center">
+        <div class="col-sm-6 col-md-4 text-center mb-4">
+          <img src="assets/historia/carpintero.jpg" alt="Juan Pérez" class="rounded-circle ohs-team-img mb-3">
+          <h5>Juan Pérez</h5>
+          <small>Co-fundador & Maestro carpintero</small>
+        </div>
+        <div class="col-sm-6 col-md-4 text-center mb-4">
+          <img src="assets/historia/carpintero2.jpg" alt="María López" class="rounded-circle ohs-team-img mb-3">
+          <h5>María López</h5>
+          <small>Co-fundadora & Directora creativa</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="py-5 text-center">
+      <h3 class="mb-4 ohs-title">¿Listo para tu puerta ideal?</h3>
+      <p class="text-muted mb-4">Cuéntanos tu proyecto y te asesoramos sin compromiso.</p>
+      <a href="mailto:verdsanch@gmail.com" class="btn btn-primary btn-lg ohs-cta-btn">
+        Contáctanos
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (igual al resto) -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <img src="assets/logo/logopng.png" alt="VERDSANCH Logo" width="100" class="mb-3">
+      <p>Churriana de la vega, camino bajo Nº5, Granada, España</p>
+      <div class="mb-3">
+        <a href="#" class="text-light me-3">Facebook</a>
+        <a href="#" class="text-light me-3">Instagram</a>
+        <a href="#" class="text-light">LinkedIn</a>
+      </div>
+      <div>
+        <a href="#" class="text-light me-3">Aviso Legal</a>
+        <a href="#" class="text-light me-3">Política de Cookies</a>
+        <a href="#" class="text-light">Política de Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

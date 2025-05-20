@@ -1,0 +1,83 @@
+/* HERO
+.ohs-hero {
+  position: relative;
+}
+.ohs-hero-img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+.ohs-hero-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(0,0,0,0.5);
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+} */
+
+/* TITULARES */
+.ohs-title {
+  color: #3f3a36;
+  font-weight: 600;
+}
+
+/* TIMELINE */
+.ohs-timeline {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  border-left: 3px solid #6f8a5e;
+}
+.ohs-timeline-item {
+  position: relative;
+  padding: 1rem 1rem 1rem 2rem;
+}
+.ohs-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 1.2rem;
+  width: 20px;
+  height: 20px;
+  background: #6f8a5e;
+  border-radius: 50%;
+}
+.ohs-timeline-item h5 {
+  margin-bottom: 0.3rem;
+}
+.ohs-timeline-item p {
+  margin: 0;
+  color: #555;
+}
+
+/* VALORES */
+.ohs-icon {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.ohs-icon:hover {
+  transform: scale(1.2);
+}
+
+/* EQUIPO */
+.ohs-team-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* CTA */
+.ohs-cta-btn {
+  background-color: #6f8a5e;
+  border-color: #6f8a5e;
+  transition: background-color 0.3s ease;
+}
+.ohs-cta-btn:hover {
+  background-color: #5d754c;
+  border-color: #5d754c;
+}

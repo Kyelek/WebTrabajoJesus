@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VERDSANCH | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="styles.css">    Tu CSS actual -->
+  <link rel="stylesheet" href="home.css"> <!-- Nuevos estilos home -->
+  <link rel="icon" type="image/png" href="assets/logo/logoico.ico">
+</head>
+
+<body>
+
+  <!-- NAV (igual al de puertas) -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top py-2">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo/logopng.png" alt="VERDSANCH Logo" width="80">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Menú navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item mx-lg-2"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item dropdown mx-lg-2">
+            <a class="nav-link dropdown-toggle" href="#" id="productosDD" data-bs-toggle="dropdown">Productos</a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="productosDD">
+              <li><a class="dropdown-item" href="puertas.html">Puertas</a></li>
+              <li><a class="dropdown-item" href="cocina.html">Cocina</a></li>
+              <li><a class="dropdown-item" href="escalones.html">Escalones</a></li>
+              <li><a class="dropdown-item" href="armarios.html">Armarios</a></li>
+              <li><a class="dropdown-item" href="muestrario.html">Muestrario</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-lg-2"><a class="nav-link" href="historia.html">Nuestra historia</a></li>
+          <li class="nav-item ms-lg-3">
+            <a href="mailto:verdsanch@gmail.com?subject=Solicitud%20de%20presupuesto&body=Hola%20VERDSANCH,%0A%0AMe%20gustaría%20recibir%20un%20presupuesto%20para%20una%20puerta%20a%20medida.%0A%0AGracias."
+              class="btn btn-success btn-sm">
+              Pide tu presupuesto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO con carrusel (imagen fija al cargar) -->
+  <section id="heroCarousel" class="position-relative hero-carousel mb-5">
+    <div class="hero-slide active" style="background-image: url('assets/img/cocina/cocina1.jpeg');"></div>
+    <div class="hero-slide" style="background-image: url('assets/img/cocina/cocina2.jpeg');"></div>
+    <div class="hero-slide" style="background-image: url('assets/img/puertas/puerta3.jpeg');"></div>
+    <div class="hero-overlay text-center px-4">
+      <h1 class="display-4">Quiénes somos en VERDSANCH</h1>
+      <p class="lead">Expertos en puertas a medida, combinamos tecnología y artesanía para ofrecer la máxima calidad.
+      </p>
+    </div>
+    <button id="heroPrev" class="carousel-control prev">&#10094;</button>
+    <button id="heroNext" class="carousel-control next">&#10095;</button>
+  </section>
+
+  <!-- Quiénes somos -->
+  <section class="py-3" id="quienes">
+    <div class="container">
+      <h2 class="text-center mb-4">Quiénes somos</h2>
+      <p class="text-center text-muted">
+        En VERDSANCH somos una empresa familiar dedicada desde hace más de 20 años a la fabricación e instalación de
+        puertas de madera de alta gama. Nuestro enfoque minimalista y eco-friendly nos distingue: trabajamos
+        exclusivamente con maderas certificadas y acabados no tóxicos, garantizando un producto duradero y respetuoso
+        con el medio ambiente.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio de trabajos -->
+  <section class="py-5 bg-light" id="portfolio-home">
+    <div class="container">
+      <h2 class="text-center mb-5">Algunos de nuestros trabajos</h2>
+
+      <!-- Proyecto 1 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <div class="ratio ratio-4x3">
+            <img src="assets/img/puertas/puerta1.jpeg" alt="Puerta Minimalista"
+              class="img-fluid rounded shadow-sm portfolio-img">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Puerta Minimalista Lacada</h4>
+          <p>Diseño de líneas puras en blanco mate para maximizar la luminosidad y crear espacios diáfanos, con bisagras
+            ocultas y cierre suave.</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 (imagen derecha) -->
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <div class="ratio ratio-4x3">
+            <img src="assets/img/escaleras/Escalera1.jpeg" alt="Nogal Oscuro"
+              class="img-fluid rounded shadow-sm portfolio-img">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Acabado Nogal Oscuro</h4>
+          <p>Realce de vetas naturales con barniz mate de poro abierto, combinado con herrajes en negro mate para un
+            contraste elegante.</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <div class="ratio ratio-4x3">
+            <img src="assets/img/cocina/cocina2.jpeg" alt="Marco Invisible"
+              class="img-fluid rounded shadow-sm portfolio-img">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Cocina de madera</h4>
+          <p>Integración perfecta con la pared para un efecto “flotante”, ideal en ambientes contemporáneos donde prima
+            la continuidad visual.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrusel de marcas -->
+  <section class="py-5" id="marcas">
+    <div class="container">
+      <h2 class="text-center mb-4">Trabajamos con estas marcas</h2>
+      <div id="brandsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row text-center">
+              <div class="col-6 col-md-3 mb-3">
+                <img src="assets/marcas/marca1.jpg" class="img-fluid" alt="Marca 1">
+              </div>
+              <div class="col-6 col-md-3 mb-3">
+                <img src="assets/marcas/marca2.png" class="img-fluid" alt="Marca 2">
+              </div>
+              <div class="col-6 col-md-3 mb-3">
+                <img src="assets/marcas/marca3.png" class="img-fluid" alt="Marca 3">
+              </div>
+              <div class="col-6 col-md-3 mb-3">
+                <img src="assets/marcas/marca4.png" class="img-fluid" alt="Marca 4">
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row text-center">
+              <div class="col-6 col-md-3 mb-3">
+                <img src="assets/marcas/marca5.png" class="img-fluid" alt="Marca 5">
+              </div>
+              <div class="col-6 col-md-3 mb-3">
+                <img src="assets/marcas/marca6.png" class="img-fluid" alt="Marca 6">
+              </div>
+              <div class="col-6 col-md-3 mb-3">
+                <img src="assets/marcas/marca7.png" class="img-fluid" alt="Marca 7">
+              </div>
+              <div class="col-6 col-md-3 mb-3">
+                <img src="assets/marcas/marca9.png" class="img-fluid" alt="Marca 8">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (igual al tuyo) -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <img src="assets/logo/logopng.png" alt="VERDSANCH Logo" width="100" class="mb-3">
+      <p>Churriana de la vega, camino bajo Nº5, Granada, España</p>
+      <div class="mb-3">
+        <a href="#" class="text-light me-3">Facebook</a>
+        <a href="#" class="text-light me-3">Instagram</a>
+        <a href="#" class="text-light">LinkedIn</a>
+      </div>
+      <div>
+        <a href="#" class="text-light me-3">Aviso Legal</a>
+        <a href="#" class="text-light me-3">Política de Cookies</a>
+        <a href="#" class="text-light">Política de Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 bg-transparent">
+        <div class="modal-body p-0">
+          <img src="" id="modalImg" class="img-fluid rounded" alt="Imagen ampliada">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script> <!-- tu JS global -->
+  <script src="home.js"></script> <!-- nuevo JS home -->
+</body>
+
+</html>
